@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class TodoList extends Component {
     constructor(props){
         super(props);
-        this.state = {todos: []}
+        this.state = {todos: [{task:"Walk the bird"}, {task:"punch the boss"}]}
     }
     render() {
         return (
