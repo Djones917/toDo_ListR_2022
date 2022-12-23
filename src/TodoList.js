@@ -15,9 +15,7 @@ class TodoList extends Component {
         return (
             <div>
                <h1>ToDo List</h1>  
-               <ul>
-                 
-               </ul>  
+               <ul>{todos}</ul>  
             </div>
         )
     }
