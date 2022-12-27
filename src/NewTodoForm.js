@@ -4,7 +4,8 @@ class NewTodoForm extends Component {
     render() {
         return (
            <form>
-             <input type="text" placeholder="New Todo" />
+             <label htmlFor="task">New Todo</label>
+             <input type="text" placeholder="New Todo" id="task" />
            </form>
         )
     }
