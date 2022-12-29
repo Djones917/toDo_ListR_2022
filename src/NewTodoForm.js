@@ -9,7 +9,12 @@ class NewTodoForm extends Component {
         return (
            <form>
              <label htmlFor="task">New Todo</label>
-             <input type="text" placeholder="New Todo" id="task" value={this.state.task}/>
+             <input 
+                type="text"
+                placeholder="New Todo"
+                id="task" value={this.state.task}
+                onChange={this.handleChange}
+             />
            </form>
         )
     }
