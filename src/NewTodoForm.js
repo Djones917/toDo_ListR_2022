@@ -5,6 +5,9 @@ class NewTodoForm extends Component {
     super(props);
     this.state = {task: ""}
   }
+  handleChange(evy){
+    
+  }
     render() {
         return (
            <form>
