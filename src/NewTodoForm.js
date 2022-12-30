@@ -4,9 +4,12 @@ class NewTodoForm extends Component {
   constructor(props){
     super(props);
     this.state = {task: ""}
+    this.handleChange = this.handleChange.bind(this);
   }
   handleChange(evy){
-    
+    this.state({
+      [evt.target.name]: evt.target.value
+    });
   }
     render() {
         return (
