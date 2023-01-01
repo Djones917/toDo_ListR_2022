@@ -1,4 +1,4 @@
-import React, from { Component } from "react";
+import React, { Component } from "react";
 
 class NewTodoForm extends Component {
   constructor(props){
@@ -27,3 +27,5 @@ class NewTodoForm extends Component {
         )
     }
 }
+
+export default NewTodoForm;
