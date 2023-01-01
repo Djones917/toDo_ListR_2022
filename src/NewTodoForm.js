@@ -6,7 +6,7 @@ class NewTodoForm extends Component {
     this.state = {task: ""}
     this.handleChange = this.handleChange.bind(this);
   }
-  handleChange(evy){
+  handleChange(evt){
     this.state({
       [evt.target.name]: evt.target.value
     });
@@ -18,7 +18,9 @@ class NewTodoForm extends Component {
              <input 
                 type="text"
                 placeholder="New Todo"
-                id="task" value={this.state.task}
+                id="task"
+                name="task"
+                value={this.state.task}
                 onChange={this.handleChange}
              />
            </form>
