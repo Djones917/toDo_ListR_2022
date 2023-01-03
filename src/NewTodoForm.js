@@ -13,7 +13,7 @@ class NewTodoForm extends Component {
   }
     render() {
         return (
-           <form>
+           <form onSubmit={this.handle.Submit}>
              <label htmlFor="task">New Todo</label>
              <input 
                 type="text"
