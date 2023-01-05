@@ -11,9 +11,12 @@ class NewTodoForm extends Component {
       [evt.target.name]: evt.target.value
     });
   }
+  handleSubmit(evt) {
+    evt.preventDefault();
+  }
     render() {
         return (
-           <form onSubmit={this.handle.Submit}>
+           <form onSubmit={this.handleSubmit}>
              <label htmlFor="task">New Todo</label>
              <input 
                 type="text"
