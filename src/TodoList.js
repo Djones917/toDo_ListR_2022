@@ -8,6 +8,12 @@ class TodoList extends Component {
         this.state = {
             todos: [{ task: "Walk the bird"}, { task: "punch the boss"}]
         };
+        this.create = this.create.bind(this);
+    }
+    create(newTodo) {
+        this.setState({
+            todos: [...this.state.todos, newTodo]
+        })
     }
     render() {
         const todos = this.state.todos.map(todo => {
